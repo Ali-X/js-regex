@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task3</title>
+</head>
+<body>
+  Создать функцию createURL(templateURL, params), которая на основе шаблона и параметров формирует URL
+  <p>
+    let url = createURL(
+    `/api/countries/{country}/regions/{region}/`,
+    { country: `Ukraine`, region: `Kiev`}
+    );
+    console.assert(url === '/api/countries/Ukraine/regions/Kiev/');
+  </p>
+  <script src="../js/script3.js"></script>
+</body>
+</html>
