@@ -6,3 +6,14 @@ let url = createURL(
 );
 
 console.assert(url === '/api/countries/Ukraine/regions/Kiev/');
+
+function createURL(template, obj) {
+  let regex = /({(\w)+})+/g;
+  let parameters = template.match(regex);
+
+  parameters.forEach(elem => {
+    template = template.replace(elem, obj[/\w+/.exec(elem)]);
+  });
+
+  return template;
+}
