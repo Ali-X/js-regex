@@ -5,6 +5,7 @@ let url = createURL(
   {country: `Ukraine`, region: `Kiev`}
 );
 
+console.log(`${url} === /api/countries/Ukraine/regions/Kiev/ is ${url === '/api/countries/Ukraine/regions/Kiev/'}`);
 console.assert(url === '/api/countries/Ukraine/regions/Kiev/');
 
 function createURL(template, obj) {
