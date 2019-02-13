@@ -10,7 +10,7 @@ function findTime(str) {
     let hours = time[1];
     let minutes = time[2];
 
-    if (hours >= 0 && hours <= 24 && minutes >= 0 && minutes < 60) {
+    if (hours >= 0 && hours < 24 && minutes >= 0 && minutes < 60) {
       return time[0];
     }
   }
